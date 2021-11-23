@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/jadson-medeiros/challengehash/server/controllers"
+	"github.com/jadson-medeiros/challengehash/controllers"
 )
 
 func ConfigRoutes(router *gin.Engine) *gin.Engine {
