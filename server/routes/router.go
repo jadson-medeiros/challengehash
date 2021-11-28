@@ -12,6 +12,8 @@ func ConfigRoutes(router *gin.Engine) *gin.Engine {
 		products := main.Group("products")
 		{
 			products.GET("/", controllers.ShowProducts)
+			products.GET("/:id", controllers.ShowProduct)
+			products.POST("/", controllers.CreateProduct)
 		}
 	}
 
